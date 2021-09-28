@@ -19,12 +19,15 @@
       href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script defer src="js/index.js"></script>
   </head>
   <body>
     <header>
       <nav
         class="
-          navbar navbar-expand-lg navbar-light
+          navbar navbar-expand-lg 
           light-grey-bg
           align-items-center
           d-flex
@@ -67,79 +70,36 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div class="py-4 bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="assets/images/hangman.jpg" alt="Jogo da Foca" />
-                <div class="card-body">
-                  <p class="card-text">
-                    Tente adivinhar palavras relacionadas à língua portuguesa!
-                    Clique sobre as letras para tentar formar a palavra
-                    sorteada. Você pode cometer no máximo 10 erros.
-                  </p>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <button
-                      type="button"
-                      class="btn btn-md btn-outline-primary flex-fill"
-                    >
-                      Jogar!
-                    </button>
-                  </div>
+    <main class="py-4 main" id="app">
+      <div class="container">
+        <div class="row px-4">
+          <div class="col-md-4 gameCard" v-for="game in games" :key="game.id">
+            <div class="card mb-4 shadow">
+              <img :src="'assets/images/games/'+game.image" :alt="game.name" height="270px"/>
+              <div class="card-body">
+                <h3>{{game.name}}</h3>
+                <p class="card-text">
+                  {{game.description}}
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-dark flex-fill p-2"
+                    :class="{ disabled: !game.enabled }"
+                  >
+                    Jogar!
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="assets/images/hangman.jpg" alt="Jogo da Foca" />
-                <div class="card-body">
-                  <p class="card-text">
-                    Tente adivinhar palavras relacionadas à língua portuguesa!
-                    Clique sobre as letras para tentar formar a palavra
-                    sorteada. Você pode cometer no máximo 10 erros.
-                  </p>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <button
-                      type="button"
-                      class="btn btn-md btn-outline-primary flex-fill"
-                    >
-                      Jogar!
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="assets/images/hangman.jpg" alt="Jogo da Foca" />
-                <div class="card-body">
-                  <p class="card-text">
-                    Tente adivinhar palavras relacionadas à língua portuguesa!
-                    Clique sobre as letras para tentar formar a palavra
-                    sorteada. Você pode cometer no máximo 10 erros.
-                  </p>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <button
-                      type="button"
-                      class="btn btn-md btn-outline-primary flex-fill"
-                    >
-                      Jogar!
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div> 
         </div>
       </div>
     </main>
-
     <footer class="navbar fixed-bottom text-muted light-grey-bg">
       <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
+        <p class="float-right my-1">
+          <a href="#"><img src="assets/images/up-arrow.jpg" alt="Voltar ao topo" height="32px"> Voltar ao topo</a>
         </p>
         <p>Joel Marcos Graf &copy; CliniJogos</p>
       </div>

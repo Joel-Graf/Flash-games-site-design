@@ -1,7 +1,35 @@
-/** HEADER **/
+/*
+* GENERAL *
+*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FF6634;
+}
 
 .light-grey-bg {
-  background-color: #D3D3D3;
+  background-color: #e3e3e3;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+/*
+* HEADER *
+*/
+.nav-link {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.nav-link:hover {
+  font-size: 1.2rem;
+  color: #FF6634;
 }
 
 .logo {
@@ -9,9 +37,6 @@
   align-items: center;
   text-decoration: none;
   margin-right: 18px;
-}
-.logo:hover {
-  text-decoration: none;
 }
 
 .logo-img {
@@ -35,4 +60,11 @@
 
 .logo-text-second-half {
   color: #ff6634;
+}
+
+/*
+* MAIN *
+*/
+.gameCard:hover {
+  transform: scale(1.01);
 }
