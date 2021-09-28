@@ -1,0 +1,38 @@
+/** HEADER **/
+
+.light-grey-bg {
+  background-color: #D3D3D3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 18px;
+}
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo-img {
+  margin: 0 6px;
+  height: 4.2em;
+}
+
+.logo-text {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: -0.5px -0.5px 0 #615655, 0.5px -0.5px 0 #615655,
+    -0.5px 0.5px 0 #615655, 0.5px 0.5px 0 #615655;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-text-first-half {
+  color: #454444;
+}
+
+.logo-text-second-half {
+  color: #ff6634;
+}
