@@ -1,5 +1,5 @@
 .game-main {
-  height: 74vh;
+  min-height: 70vh;
 }
 
 #game {

@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/images/favicon.png"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/game.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,17 +18,25 @@
       rel="stylesheet"
     />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/assets/images/favicon.png"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav
         class="
-          navbar navbar-expand-lg
+          navbar navbar-light navbar-expand-lg
           light-grey-bg
           align-items-center
           d-flex
@@ -51,11 +57,10 @@
         </a>
         <button
           class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
         >
-          <span class="navbar-toggler-icon">[]</span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbar">
@@ -70,9 +75,19 @@
         </div>
       </nav>
     </header>
-    <main class="py-4 main d-flex flex-column justify-content-center align-items-center game-main">
-      <h1 class='my-4 flex-fill'>Jogo da Forca</h1>
-      <img src="/assets/images/work-in-progress.png" alt="Jogo da Forca">
+    <main
+      class="
+        py-4
+        main
+        d-flex
+        flex-column
+        justify-content-center
+        align-items-center
+        game-main
+      "
+    >
+      <h1 class="my-2 flex-fill">Jogo da Forca</h1>
+      <img src="/assets/images/work-in-progress.png" alt="Jogo da Forca" />
     </main>
     <footer class="navbar fixed-bottom text-muted light-grey-bg">
       <div class="container d-flex flex-row-reverse">
