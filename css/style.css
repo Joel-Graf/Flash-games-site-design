@@ -1,34 +1,27 @@
 /*
 * GENERAL *
 */
-a {
-  text-decoration: none;
-  color: black;
+h1, h2, h3, h4, h5, li {
+  font-family: "Gemunu Libre", sans-serif;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #FF6634;
+body {
+  height: 100vh;
 }
 
 .light-grey-bg {
   background-color: #e3e3e3;
 }
 
-.main {
-  margin-bottom: 30px;
-}
-
 /*
 * HEADER *
 */
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: black;
 }
 
 .nav-link:hover {
-  font-size: 1.2rem;
   color: #FF6634;
 }
 
@@ -65,6 +58,23 @@ a:hover {
 /*
 * MAIN *
 */
-.gameCard:hover {
+.game-card:hover {
   transform: scale(1.01);
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+/*
+* FOOTER *
+*/
+.back-to-top {
+  text-decoration: none;
+  color: black;
+}
+
+.back-to-top:hover {
+  text-decoration: none;
+  color: #FF6634;
 }
