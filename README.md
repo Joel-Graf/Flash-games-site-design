@@ -1,4 +1,4 @@
-# CliniJogos
+# Design de site de jogos flash
 
 Projeto desenvolvimento como teste téncico para vaga de desenvolvedor web jr.<br>
 
